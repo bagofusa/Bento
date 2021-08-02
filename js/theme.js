@@ -1,6 +1,7 @@
 let darkTheme = localStorage.getItem('darkTheme');
 const themeToggle = document.querySelector('#themeButton');
 
+
 const enableDark = () => {
     document.body.classList.add('darktheme');
     localStorage.setItem('darkTheme', 'enabled');
@@ -15,11 +16,11 @@ const disableDark = () => {
     feather.replace();
 };
 
-if (darkTheme === 'enabled') {
+//if (darkTheme === 'enabled') {
     enableDark();
-} else {
-    disableDark();
-}
+//} else {
+//    disableDark();
+//}
 
 themeToggle.addEventListener('click', () => {
     darkTheme = localStorage.getItem('darkTheme');
